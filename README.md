@@ -4,9 +4,46 @@ Welcome to the Documentation for the UW Solar Website! If you're looking for inf
 
 **IF YOU HAVE NO EXPERIENCE WITH HTML, CSS, JAVASCRIPT OR GIT, DO NOT MAKE ANY CHANGES TO THIS WEBSITE!** This website is a fairly complex project that will be overwhelming to anyone with no experience in the aformentioned programming languages. Ideally, students who work on this website should have taken CSE 142, 143, 154 and 391 **AT MINIMUM**.
 
+You'll also want a plan. Talk to UW Solar administrators and figure out exactly what they'd like to change/add on the website.
+
 #### Note
 
 Sometimes, during development, you may notice that you make a change to the website but that change does not appear when you reload the website. This is because your browser is most likely caching certain files (JavaScript files and Images are often cached). Your browser does this to improve performance. If you notice that you're making changes and they're not reflected, clearing the cache will most likely solve the problem. This article does a good job of explaining how to clear the cache on multiple browsers: https://www.pcmag.com/how-to/how-to-clear-your-cache-on-any-browser.
+
+# Resources
+
+To get a solid foundation in HTML, CSS, JavaScript, Git, Node JS, Vue and VS Code, I recommend the following websites/videos:
+
+## HTML
+
+* https://www.w3schools.com/html/
+* https://www.youtube.com/watch?v=UB1O30fR-EE
+* https://www.geeksforgeeks.org/html-basics/
+
+## CSS
+
+* https://www.w3schools.com/css/default.asp
+* https://www.youtube.com/watch?v=yfoY53QXEnI
+
+## JavaScript
+
+* https://www.w3schools.com/js/
+* https://www.youtube.com/watch?v=hdI2bqOjy3c
+
+## Git
+
+* https://rogerdudler.github.io/git-guide/
+* https://www.youtube.com/watch?v=SWYqp7iY_Tc
+
+## Node JS and Vue
+
+* https://www.w3schools.com/whatis/whatis_vue.asp
+* https://www.youtube.com/watch?v=Wy9q22isx3U (Vue)
+
+## VS Code
+
+* https://code.visualstudio.com/docs/introvideos/basics
+* https://www.youtube.com/watch?v=VqCgcpAypFQ
 
 # Contents
 
@@ -71,6 +108,8 @@ Now, create a folder called something like `UW-Solar-Website` in whatever folder
 PROBLEMS    OUTPUT      DEBUG CONSOLE       TERMINAL
 ```
 
+If you don't see this panel, go to the menu bar at the top of the page, click **Terminal**, and then click **New Terminal**. This will make a new terminal panel appear.
+
 Open up the [UW Solar Website Repository on GitHub](https://github.com/UW-Solar/Website). On this repository, you should see a Green **Code** button. When you click on it, a pop up should appear, and it should say **Clone with HTTPS**. You should see a URL, copy this URL to use later. Then execute the following commands one after another. Wherever it says **URL**, paste the URL from the GitHub page.
 
 ```
@@ -125,6 +164,55 @@ Run all the commands given in these steps in the VS Code Terminal.
 11. Run `npm run deploy`. **This will take a while to run.**
 
 Once you complete these steps, the site will automatically update itself. Go back to step 5 and go through the checklist again on the completed site. Make sure everything still works. If you follow all the instructions in this documentation, you should not get any errors. **IF YOU DO GET AN ERROR, MAKE NO CHANGES TO THE WEBSITE AND LOOK AT THE TROUBLESHOOTING SECTION AT THE BOTTOM OF THIS DOCUMENT**.
+
+# Making Edits
+
+If you want to make changes to any part of the website, look below. You'll notice that there are several other files in this folder whose names correspond to the headers below. Each of the headers below has a list of things that that document will show you how to edit.
+
+## HOME PAGE
+
+* I want to change the content in the "About" section
+* I want to change the content in the "Meeting Details" or the "Contact" sections
+* I want to add a new section to the UW Solar Home page
+
+## PROJECTS
+
+* I want to add a new Project to "Current" or "Completed"
+* I want to update the description of a project
+* I want to add/remove an image carousel to a project
+* I want to add/remove images from an image carousel
+* I want to move a project from "Current" to "Completed"
+
+## MAP/DATA
+
+* There's a problem with the map. It's not loading/displaying properly
+
+## NEWS
+
+* I want to add a news entry for the news page
+* I want to make a change to an existing news entry
+* I want a certain news entry to be "pinned" at the top
+* I want to change the image for a news entry (Multiple images not allowed)
+
+## PEOPLE
+
+* I want to add/remove Faculty
+* I want to add/remove Students
+* I want to add/remove Alumni
+* I want to add/remove Partners
+* I want to add a new section
+
+## FOOTER
+
+* I want to add/remove a social media icon
+
+## NAVIGATION BAR
+
+* I want to add a new page to the navigation bar
+* I want to change the order of the pages in the navigation bar
+* I want to change the name of an element
+
+If what you want to change is not listed above, it most likely requires larger structural changes to the website. If you are a high level web programmer and feel confident in applying these changes, go ahead! If not, then do not make these changes. Either take the time to learn the relevant skills are ask someone else with more web programming knowledge to help you out. Always make sure to check that your changes work!
 
 # Troubleshooting
 
