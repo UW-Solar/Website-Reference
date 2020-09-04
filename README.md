@@ -1,12 +1,26 @@
 # DOCUMENTATION
 
-Welcome to the Documentation for the UW Solar Website! If you're looking for information on how to make an edit on the website, this is the place to be. If you're brand new to the club and are looking to get set up to make changes to the website, you'll need to follow the following steps. 
+Welcome to the Documentation for the UW Solar Website! If you're looking for information on how to make an edit on the website, this is the place to be. If you're brand new to the club and are looking to get set up to make changes to the website, you'll need to follow the following steps.
 
 **IF YOU HAVE NO EXPERIENCE WITH HTML, CSS, JAVASCRIPT OR GIT, DO NOT MAKE ANY CHANGES TO THIS WEBSITE!** This website is a fairly complex project that will be overwhelming to anyone with no experience in the aformentioned programming languages. Ideally, students who work on this website should have taken CSE 142, 143, 154 and 391 **AT MINIMUM**.
 
+#### Note
+
+Sometimes, during development, you may notice that you make a change to the website but that change does not appear when you reload the website. This is because your browser is most likely caching certain files (JavaScript files and Images are often cached). Your browser does this to improve performance. If you notice that you're making changes and they're not reflected, clearing the cache will most likely solve the problem. This article does a good job of explaining how to clear the cache on multiple browsers: https://www.pcmag.com/how-to/how-to-clear-your-cache-on-any-browser.
+
+# Contents
+
+0. Open your command line
+1. Download Node.js and Git
+2. Choosing the correct editor
+3. Create a GitHub Account
+4. Downloading the files for the Website
+5. Checking your changes
+6. Making Changes to the Official UW Solar Website Repository
+
 ## 0. Open your command line
 
-When working on this website, you'll want to get familiar with the command line. There's no way around it. On Windows, press the start button and type **cmd**. You'll see an app show up in the search results called **Command Prompt**. Click on it. This is the place where you will be typing the commands given in this documentation. On Mac, the command line is called the Terminal. To access it, press the Command button and the space bar at the same time, and then type **Terminal** in the search box. Click on the app to open it. You'll also want to pin the terminal app to your toolbar since you'll be using it a lot. From now on, whenever I mention **Command Line**, it'll be the same thing as **Terminal** if you're using a Mac.
+When working on this website, you'll want to get familiar with the command line. There's no way around it. On Windows, press the start button and type **cmd**. You'll see an app show up in the search results called **Command Prompt**. Click on it. This is the place where you will be typing the commands given in this documentation. On Mac, the command line is called the Terminal. To access it, press the Command button and the space bar at the same time, and then type **Terminal** in the search box. Click on the app to open it. You'll also want to pin the terminal app to your toolbar since you'll be using it a lot. From now on, whenever I mention **Command Line**, it'll be the same thing as **Terminal** if you're using a Mac. You'll only need the Command Line for step 1, however it's a good thing to have when working with programming.
 
 ## 1. Download Node.js and Git
 
@@ -41,21 +55,23 @@ If you don't see something like that, then Git was not installed correctly. Try 
 
 ## 2. Choosing the correct editor
 
-For editing this website, we **HIGHLY RECOMMEND** using Visual Studio (VS) Code to edit the code for the website. It comes with an integrated Command Line and highlights the code nicely. Using Visual Studio Code will make your life much easier. Trust us. You can download it here: https://code.visualstudio.com/.
+For editing this website, we **HIGHLY RECOMMEND** using Visual Studio (VS) Code to edit the code for the website. It comes with an integrated Command Line and highlights the code nicely. The documentation will assume you are using VS Code and using VS Code will make your life much easier. Trust us. You can download it here: https://code.visualstudio.com/.
 
 ## 3. Create a GitHub Account
 
-In order to make changes to the website, you'll need a GitHub account. Go to https://github.com/ and create an account. I'd recommend using an email other than your UW email for this account, since your UW email expires once you graduate. Once you do this, have one of the UW Solar administrators invite you to be a collaborator on the [UW Solar Account on GitHub](https://github.com/UW-Solar). Once you're invited, you should get a notification on your account dashboard. Accept the invitation and now you have access to UW Solar's GitHub projects!
+In order to make changes to the website, you'll need a GitHub account. Go to https://github.com/ and create an account. I'd recommend using an email other than your UW email for this account, since your UW email expires once you graduate. Once you do this, have one of the UW Solar administrators invite you to be a collaborator on the [UW Solar Account on GitHub](https://github.com/UW-Solar). Once you're invited, you should get a notification on your account dashboard or email. Accept the invitation and now you have access to UW Solar's GitHub projects!
 
 ## 4. Downloading the files for the Website
 
 Now that you have Node JS, Git, and VS Code Installed, you're ready to begin working on the website. The only thing missing now are the actual files that the website is made of. 
 
-Open up the [UW Solar Website Repository on GitHub](https://github.com/UW-Solar/Website). Click the **Fork** button in the top right corner. You may see a window pop up when you click the Fork button asking you to Fork as your own account or as the UW Solar Account. If this happens click on your account, otherwise do nothing. Now go to your GitHub dashboard, and you should see the forked version of the Website Repository in your account. This will be where you will make all your changes to the website. You'll be able to see if your changes work and in the event that for some reason, the website completely breaks because of your changes, you always have the option of deleting **YOUR VERSION** of the repository and forking the original version again.
+Now, create a folder called something like `UW-Solar-Website` in whatever folder you'd like to store the website files in. Open this folder with Visual Studio Code. Once you're in visual studio code, you should see a panel at the bottom of the editor. The panel should have a series of labels at the top that read something like: 
 
-Go to the folder where you would like to store the Website on your computer. Right click inside of this website folder and open with **Git Bash**. This will open a command line type terminal where you will enter all the commands shown below.
+```
+PROBLEMS    OUTPUT      DEBUG CONSOLE       TERMINAL
+```
 
-On your repository, you should see a Green **Code** button. When you click on it, a pop up should appear, and it should say **Clone with HTTPS**. You should see a URL, copy this URL to use later. Then execute the following commands one after another. Wherever it says **URL**, paste the URL from the GitHub page.
+Open up the [UW Solar Website Repository on GitHub](https://github.com/UW-Solar/Website). On this repository, you should see a Green **Code** button. When you click on it, a pop up should appear, and it should say **Clone with HTTPS**. You should see a URL, copy this URL to use later. Then execute the following commands one after another. Wherever it says **URL**, paste the URL from the GitHub page.
 
 ```
 git init
@@ -63,17 +79,9 @@ git remote add origin URL
 git pull origin master
 ```
 
-#### Uploading Changes to your GitHub Repository
+Now you should see the file explorer on the left side of the screen begin to fill up with files for the website. Wait for these commands to finish running. Once they complete with no errors, you've successfully got all the files for the Website! You may see that VS Code is trying to recommend things for you to download in the bottom right corner. **ACCEPT EVERYTHING VS CODE SUGGESTS AND INSTALL**. All the add-ons VS Code is suggesting are meant to help improve your experience editing the website. Now you can make the adjustments/edits you need to make. Unless you are a high level HTML, CSS, and JavaScript programmer, please only follow the documentation for making edits to every page. If you follow this documentation closely, you will not run into any errors.
 
-Whenever you make changes to the website and would like to update your repository on GitHub, open Git Bash inside of your website folder and enter the following commands:
-
-```
-git add .
-git commit -m 'DESCRIBE YOUR UPDATE HERE'
-git push origin master
-```
-
-## 6. Making Changes to the Official UW Solar Website Repository
+## 5. Checking your Changes
 
 Now that you've made your changes and you want to update the actual UW website, there's a few things you need to do. Open the website project with Visual Studio Code, and in the Terminal located at the bottom of the screen, type the following command:
 
@@ -85,18 +93,80 @@ If there is no terminal at the bottom of the screen, go up to the menu bar and s
 
 The website will take a bit to compile, and when it is finished, you will see a message that the website is currently running on the localhost. You'll see a link that looks something like: https://localhost:XXXX, where the XXXX represents a number that is the port the website is hosted on your machine. Usually this number will be 3000, however it may change. Open this URL and check the website in the browser, **MAKE SURE EVERYTHING WORKS!** Once you have made sure all your changes work and the website still functions, show this to one of the UW Solar administrators. When they give you the thumbs up, look at the instructions below on how to add your changes to the official website.
 
-#### Follow these steps:
+#### SHOW YOUR CHANGES TO A UW SOLAR ADMIN AND GET THEM APPROVED BEFORE DEPLOYING TO OFFICIAL WEBSITE
+
+Below are key things you need to check before pushing your changes to the official UW Solar website, show this to a UW Solar Admin:
+
+1. All images load (Background Image, Icons, Projects Page Images, News Article Images).
+2. Check that the Map on the Map page works properly.
+3. Click through all pages and skim them to make sure everything looks fine.
+4. Click the RSS Link at the bottom of the news page to show that it works.
+5. Make sure the archive on the news page has the correct news entries for each academic year.
+6. Refresh each page to make sure there are no errors with loading.
+7. Resize the page, make sure the navigation bar works properly and that every page looks normal at different page sizes.
+
+## 6. Making Changes to the Official UW Solar Website Repository
+
+Now that you've made your edits and got them approved from UW Solar admins, you can push your changes to the official UW Solar website at `uwsolar.be.uw.edu`. Follow the steps below.
 
 Run all the commands given in these steps in the VS Code Terminal.
 
-0. Open your website project in Visual Studio Code.
+0. Open your website project in Visual Studio Code and open the terminal in VS Code.
 1. Delete the existing `dist` folder.
 2. Run `npm install`
-3. Run `npm audit`. This command may tell you to run other commands, do whatever it tells you to do.
-4. Continue to run `npm audit` until there are very few vulnerabilities (ideally 0, but OK if not).
+3. Run `npm audit`. This command may tell you to run other commands, do whatever it tells you to do. If it doesn't tell you to run any other commands, thats fine as well.
+4. If running `npm audit` from the previous step prompted you to run certain commands, then continue to run `npm audit` until there are very few vulnerabilities (ideally 0, but OK if not). **If running `npm audit` from the previous step did not prompt you to run anything, skip this step**.
 5. Run `npm install` again
 6. Run `npm update`
 7. Run `npm run generate`. **This may take a while!** Ignore any errors that don't stop this command from running.
-8. 
+8. Run `git add .`
+9. Run `git commit -m 'Updated Website (INSERT CURRENT DATE HERE)'`
+10. Run `git push origin master`
+11. Run `npm run deploy`. **This will take a while to run.**
 
-### IF YOU'RE USING GIT, READ HERE:
+Once you complete these steps, the site will automatically update itself. Go back to step 5 and go through the checklist again on the completed site. Make sure everything still works. If you follow all the instructions in this documentation, you should not get any errors. **IF YOU DO GET AN ERROR, MAKE NO CHANGES TO THE WEBSITE AND LOOK AT THE TROUBLESHOOTING SECTION AT THE BOTTOM OF THIS DOCUMENT**.
+
+# Troubleshooting
+
+If for some reason you made changes to the website and everything has completely crashed, you've come to the right place. Below are some ways to fix the website.
+
+## Revert to an earlier version
+
+Git is a version control software, which makes it useful when trying to revert to a previous version of the project. This will be your first option when trying to fix the website. Open the website folder in VS Code and enter the following command. You may notice that not all commits are shown to you in the output, to see more press enter. To exit out of the log menu, type `wq` in the terminal. This is shown in the large sample code block below.
+
+```
+git log --pretty=oneline
+```
+
+This will show you a log of all the "commits" (versions) of the website. Shown below is an example of what the output will look like for this project. There will be more commits as time goes on, and you will see those at the top of this list. You should see the commit you wrote in Step 6 on Step 9 where you wrote `git commit -m 'Update Website (Current Date)`. If the website crashes after you committed this, then this is the commit that needs to go. Otherwise, if you are unsure, the following commit code will always be stable: `73b7cc23cc979f945f8c2b00d6e76870898b7c15`.
+
+You need to copy and paste the commit code (series of letters and numbers at the beginning) of the commit you'd like to revert to. As mentioned, the commit code given above will always work, so if you're unsure about which commit might have messed up the website, use the commit code shown above.
+
+```
+73b7cc23cc979f945f8c2b00d6e76870898b7c15 (HEAD -> develop, origin/master, master) Update Website
+88e51224544b2ddd26b9512446e7cde8473866ab Update Website
+b87eefca81a29f4cf93fe119bf3523eea5a9c2d7 Update Website
+2a5cc2de186aae47df6d38a94d13d478f8dc7a66 Update Website
+0b3835d65d50dfd4b54e32b53555a7087a89b0c1 current dist folder
+a26092c810bdb30d55b46675092802c89e957a89 no .
+ed0098131a9518e8e0e505543753f16062f47291 added . to cname
+fe11d362f6f1ffb2aa775db8a76ca8a178d6259e custom cname file
+43795bda94784288047c57fc3604e68e57a915d3 pre-deploy 1
+10d550b1e472070b258ce8c9f44d4e75082a9fad Added cname, fixed date function
+993328edebeee8570f5e69b3c82e48fa70b9c1d0 pre deploy commit
+: (This is where you press enter to see more commits, or type "wq" to exit out of this menu)
+```
+
+Now that you've chosen a commit code, enter the following command. Paste your commit code where it says **CODE**.
+
+```
+git revert CODE
+```
+
+Go to the [UW Solar Website Repository on GitHub](https://github.com/UW-Solar/Website). You should see a commit that says something like `revert "(COMMIT MESSAGE HERE)"`. If you see this, then the reversion has been successful. Follow the steps in Step 6 above to reapply these changes to the official website.
+
+## Other Issues
+
+If the website appears in any capacity, then you know there is an issue with GitHub pages. This means you're seeing the website, but it's obvious something isn't right because the background image isn't showing or there is an error message but the navigation bar still works. If you're seeing something like that, then revert to a previous commit as shown in the previous troubleshooting section.
+
+If you open the website and your browser is showing you a 404 error or a "This site can't be reached" error, then something is wrong with the servers. The person to contact for this is **Brian Vogt (bvogt@uw.edu)**. Let him know there is an error with the UW Solar website (uwsolar.be.uw.edu) and he'll get back to you with some ideas.
