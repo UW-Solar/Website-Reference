@@ -130,7 +130,7 @@ npm run dev
 
 If there is no terminal at the bottom of the screen, go up to the menu bar and select **Terminal**, then select **New Terminal** and a new terminal will appear for you. You can then enter the command shown above.
 
-The website will take a bit to compile, and when it is finished, you will see a message that the website is currently running on the localhost. You'll see a link that looks something like: https://localhost:XXXX, where the XXXX represents a number that is the port the website is hosted on your machine. Usually this number will be 3000, however it may change. Open this URL and check the website in the browser, **MAKE SURE EVERYTHING WORKS!** Once you have made sure all your changes work and the website still functions, show this to one of the UW Solar administrators. When they give you the thumbs up, look at the instructions below on how to add your changes to the official website.
+The website will take a bit to compile, and when it is finished, you will see a message that the website is currently running on the localhost. You'll see a link that looks something like: https://localhost:XXXX, where the XXXX represents a number that is the port the website is hosted on your machine. Usually this number will be 3000, however it may change. Open this URL and check the website in the browser, **MAKE SURE EVERYTHING WORKS!** Once you have made sure all your changes work and the website still functions, show this to one of the UW Solar administrators. When they give you the thumbs up, look at the instructions below in the **MAKING EDITS** section on how to add your changes to the official website.
 
 #### SHOW YOUR CHANGES TO A UW SOLAR ADMIN AND GET THEM APPROVED BEFORE DEPLOYING TO OFFICIAL WEBSITE
 
@@ -197,10 +197,7 @@ If you want to make changes to any part of the website, look below. You'll notic
 
 ## [PEOPLE](https://github.com/UW-Solar/Website-Reference/blob/master/PEOPLE.md)
 
-* I want to add/remove Faculty
-* I want to add/remove Students
-* I want to add/remove Alumni
-* I want to add/remove Partners
+* I want to add/remove Faculty, Students, Alumni or Partners
 * I want to add a new section
 
 ## [FOOTER](https://github.com/UW-Solar/Website-Reference/blob/master/FOOTER.md)

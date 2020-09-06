@@ -4,7 +4,7 @@ Always make sure to open your Website project in Visual Studio Code before follo
 
 ## I want to add a news entry for the news page
 
-We've done our best to streamline this process as we anticipate this will be the thing that is most changed on the website. **Make sure to look at other news entries to see how they are formatted.** Follow the steps below:
+We've done our best to streamline this process as we anticipate this will be the thing that is most changed on the website. **Make sure to look at other news entries to see how they are formatted. EVERY FILE IN `content/news` MUST BE A MARKDOWN FILE FORMATTED JUST AS THE TEMPLATE BELOW SHOWS.** Follow the steps below:
 
 1. Navigate to the `content` folder. Inside of this folder, theres another folder called `news`, go inside of this folder. The `news` folder contains a number of `.md` files. These are called "Markdown" files.
 2. Add a new `.md` file to the `news` folder. Call it whatever you'd like, the name should give other people an idea of what news article is inside it.
