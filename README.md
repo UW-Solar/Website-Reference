@@ -169,13 +169,13 @@ Once you complete these steps, the site will automatically update itself. Go bac
 
 If you want to make changes to any part of the website, look below. You'll notice that there are several other files in this folder whose names correspond to the headers below. Each of the headers below has a list of things that that document will show you how to edit.
 
-## HOME PAGE
+## [HOME PAGE](https://github.com/UW-Solar/Website-Reference/blob/master/HOMEPAGE.md)
 
 * I want to change the content in the "About" section
 * I want to change the content in the "Meeting Details" or the "Contact" sections
 * I want to add a new section to the UW Solar Home page
 
-## PROJECTS
+## [PROJECTS](https://github.com/UW-Solar/Website-Reference/blob/master/PROJECTS.md)
 
 * I want to add a new Project to "Current" or "Completed"
 * I want to update the description of a project
@@ -183,18 +183,19 @@ If you want to make changes to any part of the website, look below. You'll notic
 * I want to add/remove images from an image carousel
 * I want to move a project from "Current" to "Completed"
 
-## MAP/DATA
+## [MAP/DATA](https://github.com/UW-Solar/Website-Reference/blob/master/MAP_DATA.md)
 
 * There's a problem with the map. It's not loading/displaying properly
+* I'd like to update the map/data visualizations
 
-## NEWS
+## [NEWS](https://github.com/UW-Solar/Website-Reference/blob/master/NEWS.md)
 
 * I want to add a news entry for the news page
 * I want to make a change to an existing news entry
 * I want a certain news entry to be "pinned" at the top
 * I want to change the image for a news entry (Multiple images not allowed)
 
-## PEOPLE
+## [PEOPLE](https://github.com/UW-Solar/Website-Reference/blob/master/PEOPLE.md)
 
 * I want to add/remove Faculty
 * I want to add/remove Students
@@ -202,11 +203,11 @@ If you want to make changes to any part of the website, look below. You'll notic
 * I want to add/remove Partners
 * I want to add a new section
 
-## FOOTER
+## [FOOTER](https://github.com/UW-Solar/Website-Reference/blob/master/FOOTER.md)
 
 * I want to add/remove a social media icon
 
-## NAVIGATION BAR
+## [NAVIGATION BAR](https://github.com/UW-Solar/Website-Reference/blob/master/NAVBAR.md)
 
 * I want to add a new page to the navigation bar
 * I want to change the order of the pages in the navigation bar

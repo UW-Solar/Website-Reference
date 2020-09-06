@@ -14,8 +14,8 @@ Locate the "Current" and "Completed" headers by looking for the comment that say
 Code | Description
 --- | ---
 1 | This part serves as an identifier for the drop down menu. If you look at other project files in the `components` folder, you'll see that this value is either: "one", "two", "three", etc. Count the number of projects in the `components` folder and then add 1 to this number. Write out the full name of this number in place of `1XXXXXXXXXXXXX`. As of writing this documentation, there are 7 projects. **Keep in mind that this value is surrounded by single quotes ('), they need to be there!**
-2 | Each project has an icon describing it's system type. Currently there are four options for Icons: **Roof Mounted**, **Ground Mounted**, **Pole Mounted**, and **Carport**. Look at the table below this one to know what to put for `2XXXXXXXXXXXXX` and `3XXXXXXXXXXXXX`.
-3 | Reference the table below.
+2 | Each project has an icon describing it's system type. Currently there are four options for Icons: **Roof Mounted**, **Ground Mounted**, **Pole Mounted**, and **Carport**. Look at the table below under the **Project Type Icon Table** section to know what to put for `2XXXXXXXXXXXXX` and `3XXXXXXXXXXXXX`.
+3 | Reference the table below under the **Project Type Icon Table** section.
 4 | This will be the same value as `1XXXXXXXXXXXXX` without the single quotes (').
 5 | This is where you will write the project description. You're not limited to text, any HTML will work here. This means you can add lists, break text into paragraph, or do other cool things. To keep things simple though, we recommend that you only write one paragraph to keep things concise.
 6 | This is ID for the image carousel. If you do not want to include an image carousel, delete the section surrounded by the comments: `<!-- ############### IMAGE CAROUSEL STARTS HERE ############### -->` and `<!-- ############### IMAGE CAROUSEL ENDS HERE ############### -->`. Use the number version you got in **Code 1**. For example, if the number you found in Code 1 was "eight", then the ID you'd use here is "8". In the code, that would look like: `id="carousel-8"`.
@@ -24,7 +24,7 @@ Code | Description
 
 ### Project Type Icon Table
 
-Icon File Name | `alt` | `src`
+Icon File Name | `alt` (`2XXXXXXXXXXXXX`) | `src` (`3XXXXXXXXXXXXX`)
 --- | --- | ---
 `carpotPV.svg` | Car Port Solar Array | `~/static/carportPV.svg`
 `groundPV.svg` | Ground Mounted Solar Array | `~/static/groundPV.svg`
