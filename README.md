@@ -243,6 +243,7 @@ Now that you've chosen a commit code, enter the following command. Paste your co
 
 ```
 git revert CODE
+git push origin master
 ```
 
 Go to the [UW Solar Website Repository on GitHub](https://github.com/UW-Solar/Website). You should see a commit that says something like `revert "(COMMIT MESSAGE HERE)"`. If you see this, then the reversion has been successful. Follow the steps in Step 6 above to reapply these changes to the official website.
