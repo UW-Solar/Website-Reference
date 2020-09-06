@@ -212,7 +212,7 @@ If you want to make changes to any part of the website, look below. You'll notic
 * I want to change the order of the pages in the navigation bar
 * I want to change the name of an element
 
-If what you want to change is not listed above, it most likely requires larger structural changes to the website. If you are a high level web programmer and feel confident in applying these changes, go ahead! If not, then do not make these changes. Either take the time to learn the relevant skills are ask someone else with more web programming knowledge to help you out. Always make sure to check that your changes work!
+If what you want to change is not listed above, it most likely requires larger structural changes to the website. If you are a high level web programmer and feel confident in applying these changes, go ahead! If not, then do not make these changes. Either take the time to learn the relevant skills or ask someone else with more web programming knowledge to help you out. Always make sure to check that your changes work!
 
 # Troubleshooting
 
@@ -220,13 +220,15 @@ If for some reason you made changes to the website and everything has completely
 
 ## Revert to an earlier version
 
-Git is a version control software, which makes it useful when trying to revert to a previous version of the project. This will be your first option when trying to fix the website. Open the website folder in VS Code and enter the following command. You may notice that not all commits are shown to you in the output, to see more press enter. To exit out of the log menu, type `wq` in the terminal. This is shown in the large sample code block below.
+Git is a version control software, which makes it useful when trying to revert to a previous version of the project. This will be your first option when trying to fix the website. Open the website folder in VS Code and enter the following command.
 
 ```
 git log --pretty=oneline
 ```
 
-This will show you a log of all the "commits" (versions) of the website. Shown below is an example of what the output will look like for this project. There will be more commits as time goes on, and you will see those at the top of this list. You should see the commit you wrote in Step 6 on Step 9 where you wrote `git commit -m 'Update Website (Current Date)`. If the website crashes after you committed this, then this is the commit that needs to go. Otherwise, if you are unsure, the following commit code will always be stable: `73b7cc23cc979f945f8c2b00d6e76870898b7c15`.
+You may notice that not all commits are shown to you in the output, to see more press enter. To exit out of the log menu, type `wq` in the terminal. This is shown in the large sample code block below.
+
+This will show you a log of all the "commits" (versions) of the website. Shown below is an example of what the output will look like for this project. There will be more commits as time goes on, and you will see those at the top of this list. You should see the commit you wrote in Step 6 on Step 9 where you wrote `git commit -m 'Update Website (Current Date)`. If the website crashes after you committed this, then this is the commit that needs to go. Always choose the commit that comes **BEFORE** the commit that caused the error. Never select the commit that caused the error because that won't bring you anywhere. Otherwise, if you are unsure, the following commit code will always be stable: `73b7cc23cc979f945f8c2b00d6e76870898b7c15`.
 
 You need to copy and paste the commit code (series of letters and numbers at the beginning) of the commit you'd like to revert to. As mentioned, the commit code given above will always work, so if you're unsure about which commit might have messed up the website, use the commit code shown above.
 
