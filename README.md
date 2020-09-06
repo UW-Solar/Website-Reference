@@ -239,7 +239,7 @@ fe11d362f6f1ffb2aa775db8a76ca8a178d6259e custom cname file
 : (This is where you press enter to see more commits, or type "wq" to exit out of this menu)
 ```
 
-Now that you've chosen a commit code, enter the following command. Paste your commit code where it says **CODE**.
+Now that you've chosen a commit code, enter the following commands one at a time. Paste your commit code where it says **CODE**.
 
 ```
 git revert CODE
