@@ -204,12 +204,6 @@ If you want to make changes to any part of the website, look below. You'll notic
 
 * I want to add/remove a social media icon
 
-## [NAVIGATION BAR](https://github.com/UW-Solar/Website-Reference/blob/master/NAVBAR.md)
-
-* I want to add a new page to the navigation bar
-* I want to change the order of the pages in the navigation bar
-* I want to change the name of an element
-
 If what you want to change is not listed above, it most likely requires larger structural changes to the website. If you are a high level web programmer and feel confident in applying these changes, go ahead! If not, then do not make these changes. Either take the time to learn the relevant skills or ask someone else with more web programming knowledge to help you out. Always make sure to check that your changes work!
 
 # Troubleshooting
