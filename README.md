@@ -110,7 +110,7 @@ PROBLEMS    OUTPUT      DEBUG CONSOLE       TERMINAL
 
 If you don't see this panel, go to the menu bar at the top of the page, click **Terminal**, and then click **New Terminal**. This will make a new terminal panel appear.
 
-Open up the [UW Solar Website Repository on GitHub](https://github.com/UW-Solar/Website). On this repository, you should see a Green **Code** button. When you click on it, a pop up should appear, and it should say **Clone with HTTPS**. You should see a URL, copy this URL to use later. Then execute the following commands one after another. Wherever it says **URL**, paste the URL from the GitHub page.
+Open up the [UW Solar Website Repository on GitHub](https://github.com/UW-Solar/Website). On this repository, you should see a Green **Code** button. When you click on it, a pop up should appear, and it should say **Clone with HTTPS**. You should see a URL, copy this URL to use later. Inside of the folder you created to store the website, right click and open with the Git Bash terminal. The regular command line works as well here. Then execute the following commands one after another. Wherever it says **URL**, paste the URL from the GitHub page.
 
 ```
 git init
