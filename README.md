@@ -129,7 +129,7 @@ cd C:\Users\USER\Documents\UW-Solar-Website
 In Mac, it might look like this:
 
 ```
-~/Documents/UW-Solar-Website
+cd ~/Documents/UW-Solar-Website
 ```
 
 Open up the [UW Solar Website Repository on GitHub](https://github.com/UW-Solar/Website). On this repository, you should see a Green **Code** button. When you click on it, a pop up should appear, you should see a menu with several options: **HTTPS**, **SSH**, or **GitHub CLI**. There may be more options depending on when you read this documentation, however you always want to select the **HTTPS** option and use the link associated with that. Copy this URL to use later. Open the command line inside of the folder you created to store the website (remember you can change directories using the `cd` command). Then execute the following commands one after another. Wherever it says **URL**, paste the URL from the GitHub page.
@@ -142,7 +142,7 @@ git remote add origin URL
 git pull origin master
 ```
 
-Now you should see the file explorer on the left side of the screen begin to fill up with files for the website. Wait for these commands to finish running. Once they complete with no errors, you've successfully got all the files for the Website! You may or may not see that VS Code is trying to recommend things for you to download in the bottom right corner. **ACCEPT EVERYTHING VS CODE SUGGESTS AND INSTALL**. All the add-ons VS Code is suggesting are meant to help improve your experience editing the website. Now you can make the adjustments/edits you need to make. Unless you are a high level HTML, CSS, and JavaScript programmer, please only follow the documentation for making edits to every page. If you follow this documentation closely, you will not run into any errors.
+Now you should see the file explorer on the left side of the screen begin to fill up with files for the website. Wait for these commands to finish running. Once they complete with no errors, you've successfully got all the files for the Website! You may or may not see that VS Code is trying to recommend things for you to download in the bottom right corner. **IF VS CODE SUGGESTS ANYTHING, ACCEPT EVERYTHING VS CODE SUGGESTS AND INSTALL. OTHERWISE IGNORE THIS MESSAGE**. All the add-ons VS Code is suggesting are meant to help improve your experience editing the website. Now you can make the adjustments/edits you need to make. Unless you are a high level HTML, CSS, and JavaScript programmer, please only follow the documentation for making edits to every page. If you follow this documentation closely, you will not run into any errors.
 
 ## 6. Checking your Changes
 
@@ -172,6 +172,8 @@ Now that you've made your edits and got them approved from UW Solar admins, you 
 
 Run all the commands given in these steps in the VS Code Terminal.
 
+And again, we'd like to emphasize that it's critical to follow the guides in this documentation **EXACTLY** when making changes. Otherwise, you will get an error in step 7 below that will be very frustrating to debug. **DON'T SKIM** and read every word of the tutorials.
+
 0. Open your website project in Visual Studio Code and open the terminal in VS Code.
 1. Delete the existing `dist` folder.
 2. Run `npm install`
@@ -179,7 +181,7 @@ Run all the commands given in these steps in the VS Code Terminal.
 4. If running `npm audit` from the previous step prompted you to run certain commands, then continue to run `npm audit` until there are very few vulnerabilities (ideally 0, but OK if not). **If running `npm audit` from the previous step did not prompt you to run anything, skip this step**.
 5. Run `npm install` again
 6. Run `npm update`
-7. Run `npm run generate`. **This may take a while!** Ignore any errors that don't stop this command from running.
+7. Run `npm run generate`. **This may take a while!** Ignore any errors that don't stop this command from running. If an error does stop this from running you'll see a red error box appear and it is because a mistake was made somewhere in the code you wrote. Go back through every tutorial you followed in this documentation and re-trace the steps you took.
 8. Run `git add .`
 9. Run `git commit -m 'Updated Website DESCRIBE CHANGES'`. In place of `DESCRIBE CHANGES`, write a short, descriptive message of what changes you made. Only use letters and numbers here, no other characters.
 10. Run `git push origin master`
@@ -229,6 +231,8 @@ If you want to make changes to any part of the website, look below. You'll notic
 * I want to add/remove a social media icon
 
 ## [MISC](https://github.com/UW-Solar/Website-Reference/blob/master/MISC.md)
+
+* I want to change the background image
 
 If what you want to change is not listed above, it most likely requires larger structural changes to the website. If you are a high level web programmer and feel confident in applying these changes, go ahead! If not, then do not make these changes. Either take the time to learn the relevant skills or ask someone else with more web programming knowledge to help you out. Always make sure to check that your changes work!
 
