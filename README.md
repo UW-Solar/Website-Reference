@@ -95,6 +95,10 @@ If you don't see something like that, then Git was not installed correctly. Try 
 
 For editing this website, we **HIGHLY RECOMMEND** using Visual Studio (VS) Code to edit the code for the website. It comes with an integrated Command Line and highlights the code nicely. The documentation will assume you are using VS Code and using VS Code will make your life much easier. Trust us. You can download it here: https://code.visualstudio.com/.
 
+Additionally, a few VS Code extensions will come in handy when developing/debugging the code. First, I would use the Vetur extension to help VS Code style and color .vue files. This makes looking over code nicer and plays well with VS Code's IntelliSense functionality: https://marketplace.visualstudio.com/items?itemName=octref.vetur
+
+Second, I recommend using the live server extension when testing if the statically-generated site works (from the dist folder): https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer. 
+
 ## 3. Create a GitHub Account
 
 In order to make changes to the website, you'll need a GitHub account. Go to https://github.com/ and create an account. I'd recommend using an email other than your UW email for this account, since your UW email expires once you graduate. Once you do this, have one of the UW Solar administrators invite you to be an **OWNER** on the [UW Solar Account on GitHub](https://github.com/UW-Solar). **MAKE SURE YOU ARE AN OWNER (NOT A COLLABORATOR) OF THE UW SOLAR ORGANIZATION ON GITHUB, OR ELSE YOU WILL NOT BE ABLE TO EDIT THE WEBSITE**. Once you're invited, you should get a notification on your account dashboard or email. Accept the invitation and now you have access to UW Solar's GitHub projects!
@@ -182,10 +186,11 @@ And again, we'd like to emphasize that it's critical to follow the guides in thi
 5. Run `npm install` again
 6. Run `npm update`
 7. Run `npm run generate`. **This may take a while!** Ignore any errors that don't stop this command from running. If an error does stop this from running you'll see a red error box appear and it is because a mistake was made somewhere in the code you wrote. Go back through every tutorial you followed in this documentation and re-trace the steps you took.
-8. Run `git add .`
-9. Run `git commit -m 'Updated Website DESCRIBE CHANGES'`. In place of `DESCRIBE CHANGES`, write a short, descriptive message of what changes you made. Only use letters and numbers here, no other characters.
-10. Run `git push origin master`
-11. Run `npm run deploy`. **This will take a while to run.**
+8. Now there should be a new `dist` folder. Open the folder in VS Code (easiest in a new window) and press the 'Go Live' button on the bottom right. This will open the website in your browser. Again, test that every page still works. This step is extremely important if the changes you made go beyond simply adding new content, but additionally change the website's functionality!
+9. Run `git add .`
+10. Run `git commit -m 'Updated Website DESCRIBE CHANGES'`. In place of `DESCRIBE CHANGES`, write a short, descriptive message of what changes you made. Only use letters and numbers here, no other characters.
+11. Run `git push origin master`
+12. Run `npm run deploy`. **This will take a while to run.**
 
 Once you complete these steps, the site will automatically update itself. Go back to step 5 and go through the checklist again on the completed site. Make sure everything still works. If you follow all the instructions in this documentation, you should not get any errors. **IF YOU DO GET AN ERROR, MAKE NO CHANGES TO THE WEBSITE AND LOOK AT THE TROUBLESHOOTING SECTION AT THE BOTTOM OF THIS DOCUMENT**.
 
