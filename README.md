@@ -158,6 +158,17 @@ npm run dev
 
 The website will take a bit to compile, and when it is finished, you will see a message that the website is currently running on the localhost. You'll see a link that looks something like: https://localhost:XXXX, where the XXXX represents a number that is the port the website is hosted on your machine. Usually this number will be 3000, however it may change. Open this URL and check the website in the browser, **MAKE SURE EVERYTHING WORKS!** Once you have made sure all your changes work and the website still functions, show this to one of the UW Solar administrators. When they give you the thumbs up, look at the instructions below in the **MAKING EDITS** section on how to add your changes to the official website.
 
+#### IF NPM RUN DEV IS NOT WORKING
+
+If `npm run dev` is not working (for example you see "'nuxt' is not recognized as an internal or external command" in the terminal), do this (making sure you're in the top layer of the git directory with the website inside):
+1. Run `npm cache clean --force` in the terminal.
+2. Delete node_modules by `rm -rf node_modules` folder or delete it manually by going into the directory and right-click > delete. Delete `package-lock.json` file too.
+If the `node_modules` folder doesn't exist, run `npm install --save nuxt --force` in the terminal. Then remove `node_modules` and the `package-lock.json` file.
+3. Run `npm install` in the terminal. (Try `npm install --force` if this doesn't work)
+4. Try running `npm run dev` in the terminal again.
+
+Note: if `npm run dev` works fine but when you try to push the changes to origin, an error occurs, such as `cannot read properties of undefined (reading: hook)` when you try `npm run generate`, the issue might be with you running ‘npm audit fix --force`. So, I would highly advise running `npm audit fix --force` unless absolutely necessary, just run `npm audit fix`.
+
 #### SHOW YOUR CHANGES TO A UW SOLAR ADMIN AND GET THEM APPROVED BEFORE DEPLOYING TO OFFICIAL WEBSITE
 
 Below are key things you need to check before pushing your changes to the official UW Solar website, show this to a UW Solar Admin:
