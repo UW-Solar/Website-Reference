@@ -162,8 +162,7 @@ The website will take a bit to compile, and when it is finished, you will see a 
 
 If `npm run dev` is not working (for example you see "'nuxt' is not recognized as an internal or external command" in the terminal), do this (making sure you're in the top layer of the git directory with the website inside):
 1. Run `npm cache clean --force` in the terminal.
-2. Delete node_modules by `rm -rf node_modules` folder or delete it manually by going into the directory and right-click > delete. Delete `package-lock.json` file too.
-If the `node_modules` folder doesn't exist, run `npm install --save nuxt --force` in the terminal. Then remove `node_modules` and the `package-lock.json` file.
+2. Delete the node_modules folder with `rm -rf node_modules` or delete it manually by going into the directory and right-click > delete. Delete `package-lock.json` file too. If the `node_modules` folder doesn't exist, run `npm install --save nuxt --force` in the terminal. Then remove `node_modules` and the `package-lock.json` file.
 3. Run `npm install` in the terminal. (Try `npm install --force` if this doesn't work)
 4. Try running `npm run dev` in the terminal again.
 
