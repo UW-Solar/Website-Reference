@@ -164,7 +164,7 @@ If `npm run dev` is not working (for example you see "'nuxt' is not recognized a
 1. Run `npm cache clean --force` in the terminal.
 2. Delete node_modules by `rm -rf node_modules` folder or delete it manually by going into the directory and right-click > delete. Delete `package-lock.json` file too.
 If the `node_modules` folder doesn't exist, run `npm install --save nuxt --force` in the terminal. Then remove `node_modules` and the `package-lock.json` file.
-3. Run `npm install` in the terminal. (Try `npm install --force` if this doesn't work)
+3. Run `npm install` in the terminal. (Try `npm install --force` if this doesn't work.)
 4. Try running `npm run dev` in the terminal again.
 
 Note: if `npm run dev` works fine but when you try to push the changes to origin, an error occurs, such as `cannot read properties of undefined (reading: hook)` when you try `npm run generate`, the issue might be with you running `npm audit fix --force`. So, I would highly advise against running `npm audit fix --force` unless absolutely necessary, just run `npm audit fix`.
