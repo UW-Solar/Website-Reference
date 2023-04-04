@@ -167,7 +167,7 @@ If the `node_modules` folder doesn't exist, run `npm install --save nuxt --force
 3. Run `npm install` in the terminal. (Try `npm install --force` if this doesn't work)
 4. Try running `npm run dev` in the terminal again.
 
-Note: if `npm run dev` works fine but when you try to push the changes to origin, an error occurs, such as `cannot read properties of undefined (reading: hook)` when you try `npm run generate`, the issue might be with you running ‘npm audit fix --force`. So, I would highly advise running `npm audit fix --force` unless absolutely necessary, just run `npm audit fix`.
+Note: if `npm run dev` works fine but when you try to push the changes to origin, an error occurs, such as `cannot read properties of undefined (reading: hook)` when you try `npm run generate`, the issue might be with you running `npm audit fix --force`. So, I would highly advise running `npm audit fix --force` unless absolutely necessary, just run `npm audit fix`.
 
 #### SHOW YOUR CHANGES TO A UW SOLAR ADMIN AND GET THEM APPROVED BEFORE DEPLOYING TO OFFICIAL WEBSITE
 
